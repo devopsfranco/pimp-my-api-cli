@@ -1,0 +1,30 @@
+{
+  "name": "pimp-my-api-cli",
+  "version": "1.0.0",
+  "description": "Command-line interface for the PimpMyAPI system with worker orchestration",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "pimp-api": "./bin/cli.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest",
+    "lint": "eslint src/**/*.js"
+  },
+  "dependencies": {
+    "@qdrant/js-client-rest": "^1.7.0",
+    "commander": "^11.1.0",
+    "inquirer": "^9.2.12",
+    "ora": "^7.0.1",
+    "chalk": "^5.3.0",
+    "dotenv": "^16.3.1",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "eslint": "^8.56.0",
+    "nodemon": "^3.0.2"
+  }
+}
